@@ -1,0 +1,44 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+body.no-scroll {
+  overflow: hidden;
+}
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'segoe';
+  src: url(../fonts/segoeui.ttf);
+}
+@font-face {
+  font-family: 'segoeb';
+  src: url(../fonts/segoeuib.ttf);
+}
+@font-face {
+  font-family: 'comfortaa';
+  src: url(../fonts/Confortaa-Regular.ttf);
+}
+body {
+  font-family: 'segoe';
+}
+textarea,
+input,
+button {
+  cursor: pointer;
+}
+textarea:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}

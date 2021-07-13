@@ -1,0 +1,70 @@
+body, * {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+ul {
+	margin: 0;
+	list-style-type: none;
+}
+a{
+	color: #000;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+@font-face {
+	font-family:'segoe';
+	src:url(../fonts/segoeui.ttf);
+}
+@font-face {
+	font-family:'segoeb';
+	src:url(../fonts/segoeuib.ttf);
+}
+@font-face {
+	font-family:'comfortaa';
+	src:url(../fonts/Confortaa-Regular.ttf);
+}
+body {
+	font-family: 'segoe';
+}
+@blue: #396a97; 
+@green: #0e8d7a;
+@grey: #f8f8f8;
+.tr(@s:.5s){
+	-webkit-transition: ease @s;
+	-o-transition: ease @s;
+	transition: ease @s;
+}
+.df(){
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.sh(){
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.15);
+}
+.fb(@w){
+	flex-basis: @w;
+	flex: 0 0 @w;
+	width: @w;
+	max-width: @w;
+}
+textarea,
+input,
+button {
+	cursor: pointer;
+	&:focus {
+		outline: 0;
+	}
+}
